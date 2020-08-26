@@ -15,7 +15,6 @@ def find_answers(questions=[]):
 
 
 def find_answer(question=""):
-    try:
-        return qa_bert_pipeline(context=personality, question=question)
-    except:
-        return None
+    print('find answer personality: ', personality)
+    print("find answer question: ", question)
+    return qa_bert_pipeline(context=personality, question=question)

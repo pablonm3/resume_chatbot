@@ -18,7 +18,7 @@ class Chatbot():
 
 
     def chat(self, user_id, msg=''):
-        answer = find_answer(question=msg)
+        answer = find_answer(msg)
         print('answer from find_answer: ', answer)
         if(answer==None or answer["score"] < QA_TRESHOLD):
             if (user_id not in self.user_history_map):
