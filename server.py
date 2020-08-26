@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 chatbot = Chatbot()
 
-@app.route("/")
+@app.route("/", methods=['POST'])
 def handler():
     event = request.json
     print(event)
