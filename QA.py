@@ -1,5 +1,4 @@
 from transformers import pipeline, AutoModel, AutoTokenizer, BertTokenizer, BertForQuestionAnswering
-import transformers
 BERT_MODEL = "twmkn9/bert-base-uncased-squad2"
 qa_bert_pipeline = pipeline('question-answering', model=BERT_MODEL, tokenizer=BERT_MODEL)
 

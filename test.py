@@ -1,3 +1,5 @@
+from types import *
+
 import unittest
 from QA import find_answers
 from conversation import chat
@@ -20,7 +22,7 @@ class MyTestCase(unittest.TestCase):
     def test_chatbot_nohistory(self):
         result = chat("hi")
         print("result: ", result)
-        #self.assertEqual(len(questions), len(result))
+        assert type(result) is str
 
 
     def test_chatbot_history(self):
@@ -33,7 +35,7 @@ class MyTestCase(unittest.TestCase):
         print("result: ", result)
         result = chat("where do I live?", history)
         print("result: ", result)
-        #self.assertEqual(len(questions), len(result))
+        assert type(result) is str
 
     def test_app(self):
         USER_ID = "key1"
@@ -41,6 +43,7 @@ class MyTestCase(unittest.TestCase):
         print(chatbot.chat(USER_ID, 'I love Pizza'))
         print(chatbot.chat(USER_ID, 'what do I like?'))
         print(chatbot.chat(USER_ID, 'whats my favorite food?'))
+
 
 
 if __name__ == '__main__':
