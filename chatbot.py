@@ -3,7 +3,7 @@ from simpletransformers.conv_ai import ConvAIModel
 from QA import find_answer
 from conversation import chat
 
-QA_TRESHOLD = 0.04
+QA_TRESHOLD = 0.06
 
 
 class Chatbot():
