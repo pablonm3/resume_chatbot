@@ -1,4 +1,3 @@
-from simpletransformers.conv_ai import ConvAIModel
 #example: https://towardsdatascience.com/how-to-train-your-chatbot-with-simple-transformers-da25160859f4
 from QA import find_answer
 from conversation import chat
